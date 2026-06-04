@@ -29,7 +29,7 @@ function Contact() {
 
             <div className="flex justify-center gap-4 flex-wrap">
                 <a
-                    href="./public/cv.pdf"
+                    href="/cv.pdf"
                     download
                     className="inline-flex items-center gap-2 bg-green-400 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-500 no-underline"
                 >
