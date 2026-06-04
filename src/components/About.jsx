@@ -6,7 +6,7 @@ function About() {
             <p className="text-gray-600 leading-relaxed mb-8 text-lg">Saya memiliki ketertarikan pada dunia teknologi dan pengembangan web. Ketertarikan tersebut mendorong saya untuk terus mempelajari berbagai teknologi frontend dan backend melalui proyek pribadi, perkuliahan, serta eksplorasi mandiri.
                 Saya menikmati proses mengubah ide menjadi solusi digital yang dapat digunakan oleh banyak orang. Bagi saya, pengembangan perangkat lunak bukan hanya tentang menulis kode, tetapi juga tentang memecahkan masalah dan menciptakan pengalaman yang bermanfaat bagi pengguna.</p>
             <h3 className="text-xl font-semibold mb-4 text-gray-800 text-center">Keahlian Teknis</h3>
-            <ul className="flex flex-wrap gap-4 justify-center">
+            <ul className="flex flex-wrap gap-3 mb-8">
                 <li className="px-4 py-2 bg-blue-700 rounded-full text-sm font-medium text-white">
                     React.js
                 </li>
@@ -26,8 +26,8 @@ function About() {
                     PostgreSQL
                 </li>
             </ul>
-            <h3 className="text-xl font-semibold mb-4 text-gray-800 text-center">Keahlian Non-Teknis</h3>
-            <ul className="flex flex-wrap gap-4 justify-center">
+            <h3 className="text-xl font-semibold mb-4 mt-6 text-gray-800 text-center">Keahlian Non-Teknis</h3>
+            <ul className="flex flex-wrap gap-3 mb-8">
                 <li className="px-4 py-2 bg-blue-700 rounded-full text-sm font-medium text-white">
                     Manajemen Proyek
                 </li>
