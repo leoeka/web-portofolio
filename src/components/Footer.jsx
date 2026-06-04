@@ -8,38 +8,40 @@ function Footer() {
         }
     };
     return (
-        <footer className="px-8 py-12 border-t border-gray-600 text-gray-400">
-            <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <footer className="px-8 py-12 border-t border-gray-200 text-gray-400">
+            <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 {/* Kolom 1: Identitas */}
-                <div className="text-center md:text-left">
-                    <h3 className="text-lg font-semibold mb-4 text-gray-900">Leo Eka Matra</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-xs mx-auto md:mx-0">Seorang Web Developer yang bersemangat membangun solusi digital inovatif dan pengalaman web yang interaktif.</p>
+                <div className="flex flex-col items-center">
+                    <h3 className="text-lg font-semibold mb-4 text-gray-900 text-center">Leo Eka Matra</h3>
+                    <p className="text-gray-600 text-sm leading-relaxed text-center">
+                        Seorang Web Developer yang bersemangat membangun solusi digital inovatif dan pengalaman web yang interaktif.
+                    </p>
                 </div>
                 {/* Kolom 2: Navigation cepat */}
-                <div>
+                <div className="flex flex-col items-center">
                     <h3 className="text-lg font-semibold mb-4 text-gray-900">Tautan Cepat</h3>
-                    <ul className="space-y-2">
-                        <li>
-                            <button onClick={() => scrollToSection('home')} className="text-gray-600 hover:text-blue-500">
+                    <ul className="space-y-2 text-center">
+                        <li className="cursor-pointer">
+                            <span onClick={() => scrollToSection('home')} className="text-gray-600 cursor-pointer hover:text-blue-500">
                                 Home
-                            </button>
+                            </span>
                         </li>
-                        <li>
-                            <button onClick={() => scrollToSection('about')} className="text-gray-600 hover:text-blue-500">
+                        <li className="cursor-pointer">
+                            <span onClick={() => scrollToSection('about')} className="text-gray-600 cursor-pointer hover:text-blue-500">
                                 Tentang Saya
-                            </button>
+                            </span>
                         </li>
-                        <li>
-                            <button onClick={() => scrollToSection('projects')} className="text-gray-600 hover:text-blue-500">
+                        <li className="cursor-pointer">
+                            <span onClick={() => scrollToSection('projects')} className="text-gray-600 cursor-pointer hover:text-blue-500">
                                 Proyek
-                            </button>
+                            </span>
                         </li>
                     </ul>
                 </div>
                 {/* Kolom 3: Media Sosial */}
-                <div className="text-center md:text-right">
-                    <h4 className="text-lg font-semibold mb-4 text-white">Media Sosial</h4>
-                    <div className="flex justify-center md:justify-end gap-4">
+                <div className="flex flex-col items-center md:items-end">
+                    <h4 className="text-lg font-semibold mb-4 text-gray-900">Media Sosial</h4>
+                    <div className="flex gap-4">
                         {/* Tautan Media Sosial */}
                         <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-500 transition-all hover:-translate-y-1">
                             <FaGithub className="text-white text-xl" />
